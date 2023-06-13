@@ -12,6 +12,7 @@ public class TextGenerator {
 	// Declare variable
 	private String text = "Distributed System Development";
 
+	public TextGenerator() { }
 	/**
 	 * this method will return the value
 	 * that stored in variable text
