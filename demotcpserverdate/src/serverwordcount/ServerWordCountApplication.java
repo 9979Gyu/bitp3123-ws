@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Scanner;
 
 /**
  * @author yuqin
@@ -22,7 +21,6 @@ public class ServerWordCountApplication {
 	public static void main(String[] args) {
 		
 		int portNo = 4231;
-		Scanner scanner = new Scanner(System.in);
 		ServerFrame serverFrame = new ServerFrame();
 		serverFrame.setVisible(true);
 		
@@ -37,12 +35,7 @@ public class ServerWordCountApplication {
 			
 			// Listen continuously for request of connection
 			while(true) {
-				
-//				System.out.print("Enter text : ");
-//				String userinputtext = scanner.nextLine();
-				
-//				textGenerator.setText(userinputtext);
-				
+			
 				// Message to indicate server is alive
 				serverFrame.updateServerStatus(false);
 				
